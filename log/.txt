@@ -1,0 +1,25 @@
+2023-05-17 01:07:41 INFO  CaseStudyFunction:69 - Ürün adı: Comfort Fit Haki Gömlek Ürün fiyatı: 1.799,00 TL
+2023-05-17 01:08:01 INFO  CaseStudyFunction:90 - Sepetteki tutar ile ürün fiyatı birbiriyle eşleşmektedir.
+2023-05-17 01:08:03 INFO  CaseStudyFunction:105 - Sepetteki ürün miktarının artırılma işlemi başarılıdır.
+2023-05-17 01:08:06 INFO  CaseStudyFunction:118 - Sepet temizlenmiştir.
+2023-05-17 01:42:05 INFO  CaseStudyFunction:69 - Ürün adı: Comfort Fit Haki Gömlek | Ürün fiyatı: 1.799,00 TL
+2023-05-17 01:42:26 INFO  CaseStudyFunction:90 - Sepetteki tutar ile ürün fiyatı birbiriyle eşleşmektedir.
+2023-05-17 01:42:28 INFO  CaseStudyFunction:105 - Sepetteki ürün miktarının artırılma işlemi başarılıdır.
+2023-05-17 01:42:30 INFO  CaseStudyFunction:118 - Sepet temizlenmiştir.
+2023-05-17 01:46:59 INFO  CaseStudyFunction:69 - Ürün adı: Comfort Fit Haki Gömlek | Ürün fiyatı: 1.799,00 TL
+2023-05-17 01:47:18 INFO  CaseStudyFunction:90 - Sepetteki tutar ile ürün fiyatı birbiriyle eşleşmektedir.
+2023-05-17 01:47:20 INFO  CaseStudyFunction:105 - Sepetteki ürün miktarının artırılma işlemi başarılıdır.
+2023-05-17 01:47:23 INFO  CaseStudyFunction:118 - Sepet temizlenmiştir.
+2023-05-17 01:47:23 INFO  CaseStudyScenario:45 - Test senaryosu tamamlandı.
+2023-05-17 01:56:20 INFO  CaseStudyFunction:69 - Ürün adı: Comfort Fit Haki Gömlek | Ürün fiyatı: 1.799,00 TL
+2023-05-17 01:56:40 INFO  CaseStudyFunction:90 - Sepetteki tutar ile ürün fiyatı birbiriyle eşleşmektedir.
+2023-05-17 01:56:42 INFO  CaseStudyFunction:105 - Sepetteki ürün miktarının artırılma işlemi başarılıdır.
+2023-05-17 01:56:45 INFO  CaseStudyFunction:118 - Sepet temizlenmiştir.
+2023-05-17 01:56:45 INFO  CaseStudyScenario:45 - Test senaryosu tamamlandı.
+2023-05-17 01:57:50 INFO  CaseStudyScenario:45 - Test senaryosu tamamlandı.
+2023-05-17 01:58:55 INFO  CaseStudyScenario:45 - Test senaryosu tamamlandı.
+2023-05-17 02:01:48 INFO  CaseStudyFunction:69 - Ürün adı: Comfort Fit Haki Gömlek | Ürün fiyatı: 1.799,00 TL
+2023-05-17 02:02:04 INFO  CaseStudyFunction:90 - Sepetteki tutar ile ürün fiyatı birbiriyle eşleşmektedir.
+2023-05-17 02:02:07 INFO  CaseStudyFunction:105 - Sepetteki ürün miktarının artırılma işlemi başarılıdır.
+2023-05-17 02:02:08 INFO  CaseStudyFunction:118 - Sepet temizlenmiştir.
+2023-05-17 02:02:08 INFO  CaseStudyScenario:45 - Test senaryosu tamamlandı.
