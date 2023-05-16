@@ -1,12 +1,13 @@
 package org.testinium.beymen.base;
 
+import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testinium.beymen.functions.CaseStudyFunction;
 
 import java.time.Duration;
 import java.util.List;
-import java.util.Random;
 
 public class BaseFunction {
     WebDriver driver = null;

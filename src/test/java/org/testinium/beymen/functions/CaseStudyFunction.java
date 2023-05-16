@@ -4,6 +4,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+import org.apache.log4j.Logger;
 import org.testinium.beymen.base.BaseFunction;
 
 import java.time.Duration;
@@ -11,6 +12,8 @@ import java.time.Duration;
 import static org.testinium.beymen.constants.CaseStudyConstants.*;
 
 public class CaseStudyFunction extends BaseFunction {
+
+    static Logger log = Logger.getLogger(CaseStudyFunction.class.getName());
     public CaseStudyFunction(WebDriver driver) {
         super(driver);
     }
@@ -63,9 +66,7 @@ public class CaseStudyFunction extends BaseFunction {
     public CaseStudyFunction writeProductInfoToTxt(){
         String productName = getText(DESCRIPTION_TEXT);
         String productPrice = getText(PRICE_TEXT);
-
-        // txtye yazılacak.
-
+        log.info("Ürün adı: "+ productName + " | Ürün fiyatı: " + productPrice);
         return this;
     }
 
@@ -85,12 +86,10 @@ public class CaseStudyFunction extends BaseFunction {
         click(MY_BASKET_BUTTON);
         String productPriceOnBasket = getText(PRICE_TEXT_IN_BASKET);
 
-        if (productPrice.equals(productPriceOnBasket)){
-            // log yazılacak.
-        }
-        else {
-            // log yazılacak.
-        }
+        if (productPrice.equals(productPriceOnBasket))
+            log.info("Sepetteki tutar ile ürün fiyatı birbiriyle eşleşmektedir.");
+        else
+            log.error("Sepetteki tutar ile ürün fiyatı birbiriyle eşleşmemektedir.");
         return this;
     }
     public CaseStudyFunction increaseQuantity(){
@@ -102,12 +101,10 @@ public class CaseStudyFunction extends BaseFunction {
     public CaseStudyFunction checkQuantity(){
         Select quantityDropDown = new Select(findElement(QUANTITY_DROPDOWN));
         String quantityValue = quantityDropDown.getFirstSelectedOption().getText();
-        if (quantityValue.equals("2 adet")){
-            // log yazılacak.
-        }
-        else {
-            // log yazılacak.
-        }
+        if (quantityValue.equals("2 adet"))
+            log.info("Sepetteki ürün miktarının artırılma işlemi başarılıdır.");
+        else
+            log.error("Sepetteki ürün miktarının artırılma işlemi başarısızdır.");
         return this;
     }
     public CaseStudyFunction deleteItem(){
@@ -116,12 +113,11 @@ public class CaseStudyFunction extends BaseFunction {
     }
 
     public CaseStudyFunction checkBasket(){
-        if (getText(EMPTY_BASKET_TEXT).equals("Sepetinizde Ürün Bulunmamaktadır")){
-            // log yazılacak.
-        }
-            else {
-            // log yazılacak.
-        }
+        WebElement emptyCard = findElement(EMPTY_BASKET_AREA);
+        if (emptyCard!=null)
+            log.info("Sepet temizlenmiştir.");
+        else
+            log.error("Sepet temizlenirken sorun oluştu.");
         return this;
     }
 }

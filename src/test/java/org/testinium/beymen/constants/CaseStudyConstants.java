@@ -17,6 +17,6 @@ public class CaseStudyConstants {
     public static final By PRICE_TEXT_IN_BASKET = By.className("m-productPrice__salePrice");
     public static final By QUANTITY_DROPDOWN = By.id("quantitySelect0-key-0");
     public static final By DELETE_ITEM_BUTTON = By.id("removeCartItemBtn0-key-0");
-    public static final By EMPTY_BASKET_TEXT = By.className("m-empty__messageTitle");
+    public static final By EMPTY_BASKET_AREA = By.id("emtyCart");
 }
 

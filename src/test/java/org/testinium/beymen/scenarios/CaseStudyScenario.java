@@ -1,5 +1,6 @@
 package org.testinium.beymen.scenarios;
 
+import org.apache.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,6 +10,7 @@ import org.testinium.beymen.functions.CaseStudyFunction;
 public class CaseStudyScenario extends BaseScenario {
     CaseStudyFunction caseStudyFunction;
 
+    static Logger logger = Logger.getLogger(CaseStudyScenario.class.getName());
     @Before
     public void before(){
         caseStudyFunction = new CaseStudyFunction(getWebDriver());
@@ -17,16 +19,16 @@ public class CaseStudyScenario extends BaseScenario {
     @Test
     public void test(){
         if (!caseStudyFunction.checkPage()){
-            // log yazılacak.
+            logger.info("Test senaryosu başlatıldı.");
             after();
         }
 
         caseStudyFunction
                 .acceptCookies()
                 .chooseGender("KADIN")
-                .search("şort")
+                .search(getTextFromExcel(0,0))
                 .clearSearch()
-                .search("gömlek")
+                .search(getTextFromExcel(0,1))
                 .pressEnterOnSearch()
                 .clickProduct()
                 .writeProductInfoToTxt()
@@ -40,6 +42,7 @@ public class CaseStudyScenario extends BaseScenario {
 
     @After
     public void after(){
+        logger.info("Test senaryosu tamamlandı.");
         tearDown();
     }
 }
